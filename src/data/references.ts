@@ -43,11 +43,11 @@ export const references: Reference[] = [
     accessedDate: "2026-09-04",
   },
   {
-    id: "dld-nationality-2017",
-    title: "Dubai Land Department Reveals the Top 10 Nationalities That Invested in Dubai's Real Estate Market Over the Past 18 Months",
-    publisher: "Dubai Land Department (DLD)",
-    url: "https://dubailand.gov.ae/en/news-media/dubai-land-department-reveals-the-top-10-nationalities-that-invested-in-dubai-s-real-estate-market-over-the-past-18-months",
-    period: "Jan 2016 – Jun 2017 (18 months) — most recent officially tabulated DLD nationality breakdown identified",
+    id: "khaleejtimes-2025-buyer-nationalities",
+    title: "Indian, British Buyers Drive Dubai Property Market as Sales Hit Dh226 Billion Amid Regional Tensions",
+    publisher: "Khaleej Times (real-estate consultancy analysis of DLD transaction data)",
+    url: "https://www.khaleejtimes.com/business/property/dubai-property-market-deals-indians-britons-top-buyers",
+    period: "Full-year 2025 (published 2026) — market-analysis estimate, not an official DLD-published percentage table",
     accessedDate: "2026-09-04",
   },
   {
