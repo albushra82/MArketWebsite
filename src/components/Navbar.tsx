@@ -9,6 +9,7 @@ const links = [
   { to: "/sectors", label: "Sectors" },
   { to: "/risk-matrix", label: "Risk Matrix" },
   { to: "/methodology", label: "Methodology" },
+  { to: "/sources", label: "Sources" },
   { to: "/about", label: "About" },
 ];
 

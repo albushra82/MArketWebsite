@@ -7,18 +7,18 @@ import { riskCategories } from "../data/riskCategories";
 const highlights = [
   {
     icon: Layers,
-    title: `${sectors.length} sectors mapped`,
-    body: "From trade and logistics to healthcare, covering the core pillars of Dubai's diversified, non-oil economy.",
+    title: `${sectors.length} focus sectors`,
+    body: "Real estate & construction, tourism & hospitality, and investment & trade licensing — the sectors that most directly drive Dubai's diversification and its foreign capital and visitor inflows.",
   },
   {
     icon: ShieldAlert,
     title: `${riskCategories.length} risk categories`,
-    body: "A consistent framework spanning geopolitical, economic, climate, regulatory, market, cyber and supply-chain risk.",
+    body: "A consistent framework spanning geopolitical, economic, climate, regulatory, market, cyber, supply-chain and investor/visitor concentration risk.",
   },
   {
     icon: LineChart,
-    title: "6-period trend history",
-    body: "Every sector's composite score is tracked over time to surface where exposure is rising or easing.",
+    title: "Cited, real statistics",
+    body: "Indicators and source-market breakdowns are drawn from official DET and Digital Dubai / Dubai Statistics Center releases, linked inline.",
   },
 ];
 
@@ -27,14 +27,15 @@ export function About() {
     <Container className="py-12">
       <SectionHeading
         eyebrow="About this project"
-        title="Why a sector risk analyzer for Dubai"
-        description="Dubai's economy has diversified deliberately over the past two decades — from a trade and logistics hub into a global center for finance, tourism, technology and industry. That diversification also means the city's risk exposure is now genuinely multidimensional: a shipping-lane disruption, a summer heatwave, or a global rate cycle can each ripple through different sectors in very different ways."
+        title="Why a focused risk analyzer for Dubai"
+        description="Real estate, tourism and investment/trade licensing sit at the center of Dubai's growth story — and share a common structural feature: each depends heavily on international capital and visitors flowing in from a relatively small set of source countries. That makes diversification of the investor and visitor base itself a risk factor worth tracking alongside the usual geopolitical, economic and climate risks."
       />
 
       <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
-        This project brings that exposure into one place — a structured, comparable view of how
-        different categories of risk intersect with each economic sector, so patterns that are
-        easy to miss sector-by-sector become visible across the whole economy.
+        This project brings that view into one place — a structured, comparable read on how
+        different categories of risk, including source-market concentration, intersect with each
+        of these three sectors, grounded in officially published statistics rather than
+        estimation.
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -69,10 +70,15 @@ export function About() {
 
       <div className="mt-14 border-t border-hairline pt-8 text-sm leading-relaxed text-ink-muted">
         <p>
-          <strong className="text-ink">Data note:</strong> All risk scores, indicators and trend
-          data on this site are an illustrative analytical model built to demonstrate a sector
-          risk-analysis framework. They are not sourced from, endorsed by, or affiliated with the
-          Government of Dubai, the UAE government, or any official statistical body. See the{" "}
+          <strong className="text-ink">Data note:</strong> Indicators, source-market shares and
+          other factual statistics on this site are drawn from cited official Dubai government
+          publications — see{" "}
+          <Link to="/sources" className="text-accent hover:underline">
+            Sources
+          </Link>
+          . The risk probability/impact scores, composite indices and trend history are an
+          independent analytical model built on top of that data — they are not themselves
+          published by, endorsed by, or affiliated with the Government of Dubai. See the{" "}
           <Link to="/methodology" className="text-accent hover:underline">
             Methodology
           </Link>{" "}

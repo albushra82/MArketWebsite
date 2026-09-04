@@ -38,16 +38,18 @@ export function Dashboard() {
         <Container className="py-16 sm:py-20">
           <div className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-surface px-3 py-1 text-xs font-medium text-ink-muted">
             <Gauge className="h-3.5 w-3.5 text-accent" />
-            Illustrative risk-analysis framework
+            Built on DET &amp; Digital Dubai published statistics
           </div>
           <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-            Mapping the risks that shape Dubai's economic sectors
+            Risk exposure across Dubai's real estate, tourism &amp; investment sectors
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
             A structured view of how geopolitical, macroeconomic, climate, regulatory, market,
-            cyber and supply-chain risk intersect with the ten sectors driving Dubai's
-            diversified economy — built to help you explore exposure, trends and mitigation
-            strategies sector by sector.
+            cyber and source-market concentration risk intersect with the three sectors at the
+            core of Dubai's diversification story — grounded in published statistics from the
+            Dubai Department of Economy &amp; Tourism and Digital Dubai / Dubai Statistics
+            Center, with a specific focus on how reliant each sector is on a small set of
+            investor and visitor nationalities.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -197,21 +199,11 @@ export function Dashboard() {
       </Container>
 
       <Container className="py-10">
-        <div className="mb-6 flex items-end justify-between">
-          <SectionHeading eyebrow="Sector Directory" title="Browse by sector" />
-          <Link to="/sectors" className="hidden text-sm font-medium text-accent hover:underline sm:block">
-            View all
-          </Link>
-        </div>
+        <SectionHeading eyebrow="Sector Directory" title="Browse by sector" className="mb-6" />
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {sectors.slice(0, 6).map((s) => (
+          {sectors.map((s) => (
             <SectorCard key={s.id} sector={s} />
           ))}
-        </div>
-        <div className="mt-6 text-center sm:hidden">
-          <Link to="/sectors" className="text-sm font-medium text-accent hover:underline">
-            View all sectors
-          </Link>
         </div>
       </Container>
     </div>

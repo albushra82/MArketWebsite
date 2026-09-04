@@ -81,6 +81,14 @@ export const riskCategories: RiskCategory[] = [
       "Corporate and household debt levels, real-estate financing leverage, liquidity conditions, and interest-rate sensitivity.",
     icon: "Landmark",
   },
+  {
+    id: "concentration",
+    name: "Investor & Visitor Concentration Risk",
+    shortName: "Concentration",
+    description:
+      "Reliance on a small number of source countries for real-estate investment, tourism arrivals, or company ownership — measured from officially published nationality breakdowns. A sector with low diversification is more exposed to a single country's travel advisories, capital controls, bilateral relations, or economic slowdown.",
+    icon: "Globe2",
+  },
 ];
 
 export const riskCategoryMap = Object.fromEntries(

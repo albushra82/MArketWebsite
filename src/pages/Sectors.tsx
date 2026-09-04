@@ -29,7 +29,7 @@ export function Sectors() {
       <SectionHeading
         eyebrow="Sector Directory"
         title="Dubai's economic sectors"
-        description="Ten sectors spanning trade, finance, real estate, tourism, industry and technology — each scored across ten distinct risk categories. Select a sector to see its full risk breakdown."
+        description="Real estate, tourism and investment/trade licensing — the three sectors most central to Dubai's diversification story — each scored across eleven risk categories, including source-market concentration by investor and visitor nationality. Select a sector to see its full risk breakdown."
       />
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

@@ -5,6 +5,7 @@ import { Sectors } from "./pages/Sectors";
 import { SectorDetail } from "./pages/SectorDetail";
 import { RiskMatrix } from "./pages/RiskMatrix";
 import { Methodology } from "./pages/Methodology";
+import { Sources } from "./pages/Sources";
 import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/sectors/:sectorId" element={<SectorDetail />} />
         <Route path="/risk-matrix" element={<RiskMatrix />} />
         <Route path="/methodology" element={<Methodology />} />
+        <Route path="/sources" element={<Sources />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

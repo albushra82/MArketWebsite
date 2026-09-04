@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { ArrowDownRight, ArrowUpRight, Minus } from "lucide-react";
 import type { TrendDirection } from "../data/types";
 import { riskLevel, riskLevelLabel, type RiskLevel } from "../lib/risk";
+import { CitationList } from "./Citation";
 
 export function Container({
   className,
@@ -121,16 +122,19 @@ export function StatCard({
   label,
   value,
   helpText,
+  referenceIds,
 }: {
   label: string;
   value: string;
   helpText?: string;
+  referenceIds?: string[];
 }) {
   return (
     <Card className="p-4">
       <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">{label}</p>
       <p className="mt-1.5 text-xl font-semibold text-ink">{value}</p>
       {helpText && <p className="mt-1 text-xs text-ink-muted">{helpText}</p>}
+      <CitationList ids={referenceIds} />
     </Card>
   );
 }

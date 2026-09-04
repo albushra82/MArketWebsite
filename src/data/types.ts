@@ -8,7 +8,8 @@ export type RiskCategoryId =
   | "supplyChain"
   | "labor"
   | "energyTransition"
-  | "financial";
+  | "financial"
+  | "concentration";
 
 export interface RiskCategory {
   id: RiskCategoryId;
@@ -25,6 +26,7 @@ export interface RiskFactorScore {
   probability: number;
   impact: number;
   note: string;
+  referenceIds?: string[];
 }
 
 export interface TrendPoint {
@@ -36,6 +38,32 @@ export interface SectorIndicator {
   label: string;
   value: string;
   helpText?: string;
+  referenceIds?: string[];
+}
+
+export interface SourceMarketShare {
+  name: string;
+  share: number;
+  note?: string;
+}
+
+export interface SourceMarketBreakdown {
+  title: string;
+  description: string;
+  unit: string;
+  markets: SourceMarketShare[];
+  topNShare: number;
+  topN: number;
+  referenceIds: string[];
+}
+
+export interface Reference {
+  id: string;
+  title: string;
+  publisher: string;
+  url: string;
+  period: string;
+  accessedDate: string;
 }
 
 export interface Sector {
@@ -53,4 +81,5 @@ export interface Sector {
   topDrivers: string[];
   mitigations: string[];
   indicators: SectorIndicator[];
+  sourceMarkets?: SourceMarketBreakdown;
 }

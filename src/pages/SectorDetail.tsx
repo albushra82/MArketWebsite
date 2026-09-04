@@ -15,6 +15,8 @@ import {
 } from "recharts";
 import { ArrowLeft, CheckCircle2, ShieldCheck } from "lucide-react";
 import { Container, Card, RiskBadge, TrendTag, StatCard, riskChipClasses } from "../components/ui";
+import { CitationList } from "../components/Citation";
+import { SourceMarkets } from "../components/SourceMarkets";
 import { sectors, sectorMap } from "../data/sectors";
 import { riskCategoryMap } from "../data/riskCategories";
 import { getIcon } from "../lib/icons";
@@ -85,15 +87,27 @@ export function SectorDetail() {
 
       <Container className="grid grid-cols-2 gap-4 py-8 sm:grid-cols-4">
         {sector.indicators.map((ind) => (
-          <StatCard key={ind.label} label={ind.label} value={ind.value} helpText={ind.helpText} />
+          <StatCard
+            key={ind.label}
+            label={ind.label}
+            value={ind.value}
+            helpText={ind.helpText}
+            referenceIds={ind.referenceIds}
+          />
         ))}
       </Container>
+
+      {sector.sourceMarkets && (
+        <Container className="pb-8">
+          <SourceMarkets data={sector.sourceMarkets} accent={sector.color} />
+        </Container>
+      )}
 
       <Container className="pb-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
           <Card className="p-5 lg:col-span-2">
             <h3 className="text-sm font-semibold text-ink">Risk Profile</h3>
-            <p className="mt-1 text-xs text-ink-faint">Severity across all ten risk categories</p>
+            <p className="mt-1 text-xs text-ink-faint">Severity across all risk categories</p>
             <div className="mt-2 h-[320px]">
               <ResponsiveContainer width="100%" height="100%">
                 <RadarChart data={radarData} outerRadius="72%">
@@ -190,7 +204,9 @@ export function SectorDetail() {
                       severity {sev.toFixed(1)}
                     </span>
                   </div>
-                  <p className="mt-1 text-sm text-ink-muted">{f.note}</p>
+                  <p className="mt-1 text-sm text-ink-muted">
+                    {f.note} <CitationList ids={f.referenceIds} className="ml-1 inline-flex gap-1" />
+                  </p>
                   <div className="mt-2.5 grid grid-cols-2 gap-4">
                     <div>
                       <div className="mb-1 flex justify-between text-[11px] text-ink-faint">
