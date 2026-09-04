@@ -72,7 +72,6 @@ export interface Sector {
   shortDescription: string;
   longDescription: string;
   icon: string;
-  gdpContributionPct: number;
   color: string;
   overallRiskScore: number;
   trendDirection: TrendDirection;

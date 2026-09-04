@@ -1,5 +1,147 @@
 import type { Reference } from "./types";
 
-export const references: Reference[] = [];
+export const references: Reference[] = [
+  // Real estate — Dubai Land Department (DLD) / Government of Dubai
+  {
+    id: "dld-2023-transactions",
+    title: "Dubai Land Department Marks Strongest Performance Ever With 1.6 Million Transactions",
+    publisher: "Dubai Media Office (Government of Dubai)",
+    url: "https://mediaoffice.ae/en/news/2024/February/07-02/Dubai-Land-Department-marks-strongest-performance",
+    period: "Full-year 2023",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dld-2024-transactions",
+    title: "Dubai's Real Estate Sector Records AED761 Billion in Transactions in 2024",
+    publisher: "Dubai Land Department (DLD)",
+    url: "https://dubailand.gov.ae/en/news-media/dubai-s-real-estate-sector-records-aed761-billion-in-transactions-in-2024",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dld-2025-transactions",
+    title: "Dubai's Real Estate Market Records New Historic Milestone With Transactions Exceeding AED917 Billion in 2025",
+    publisher: "Dubai's Public Debt Management Office (Government of Dubai)",
+    url: "https://dmo.dof.gov.ae/en/news-and-publications/latest-press-releases/dubai-s-real-estate-market-records-new-historic-milestone-with-transactions-exceeding-aed917-billion-usd-2497-bn-in-2025/",
+    period: "Full-year 2025",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dld-q1-2026-transactions",
+    title: "Dubai's Real Estate Transactions Surge 31% to Reach AED252 Billion in Q1 2026",
+    publisher: "Dubai Land Department (DLD)",
+    url: "https://dubailand.gov.ae/en/news-media/dubai-s-real-estate-transactions-surge-31-to-reach-aed-252-billion-in-q1-2026/",
+    period: "Q1 2026",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dsc-price-index-2025",
+    title: "Dubai Real Estate Price Index Records 9.81% Growth in 2025",
+    publisher: "Digital Dubai / Dubai Data and Statistics Establishment (via Gulf News)",
+    url: "https://gulfnews.com/business/property/dubai-real-estate-price-index-records-981-growth-in-2025-1.500546058",
+    period: "Full-year 2025",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dld-nationality-2017",
+    title: "Dubai Land Department Reveals the Top 10 Nationalities That Invested in Dubai's Real Estate Market Over the Past 18 Months",
+    publisher: "Dubai Land Department (DLD)",
+    url: "https://dubailand.gov.ae/en/news-media/dubai-land-department-reveals-the-top-10-nationalities-that-invested-in-dubai-s-real-estate-market-over-the-past-18-months",
+    period: "Jan 2016 – Jun 2017 (18 months) — most recent officially tabulated DLD nationality breakdown identified",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dld-strategy-2033",
+    title: "Dubai Real Estate Sector Strategy 2033",
+    publisher: "Dubai Land Department (DLD)",
+    url: "https://dubailand.gov.ae/en/news-media/dubai-real-estate-sector-strategy-2033-poised-to-drive-significant-growth-in-transactions-and-international-investments",
+    period: "Published 2024",
+    accessedDate: "2026-09-04",
+  },
+
+  // Tourism — Dubai Department of Economy and Tourism (DET)
+  {
+    id: "det-2023-visitors",
+    title: "Dubai Achieves Its Best-Ever Annual Tourism Performance With International Tourists Growing by 19.4% to 17.15 Million in 2023",
+    publisher: "Dubai's Public Debt Management Office (Government of Dubai)",
+    url: "https://dmo.dof.gov.ae/en/news-and-publications/latest-press-releases/dubai-achieves-its-best-ever-annual-tourism-performance-with-international-tourists-growing-by-194-to-1715-million-in-2023/",
+    period: "Full-year 2023",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "det-2024-visitors",
+    title: "Dubai Welcomes 18.72 Million International Visitors in 2024 (+9% YoY)",
+    publisher: "Dubai's Public Debt Management Office (Government of Dubai)",
+    url: "https://dmo.dof.gov.ae/en/news-and-publications/latest-press-releases/dubai-welcomes-1872-million-international-visitors-in-2024-plus9-yoy/",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "det-annual-visitor-report-2024",
+    title: "Annual Visitor Report 2024",
+    publisher: "Dubai Department of Economy and Tourism (DET)",
+    url: "https://www.dubaidet.gov.ae/en/research-and-insights/-/media/files/faqs/annual-visitor-report-2024/det-annual-visitor-report-2024.pdf",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "det-2025-visitors",
+    title: "Dubai's Tourism Industry Achieves Third Successive Record-Breaking Year",
+    publisher: "Dubai Media Office (Government of Dubai)",
+    url: "https://mediaoffice.ae/en/news/2026/february/09-02/dubais-tourism-industry-achieves-third-successive-record-breaking-year",
+    period: "Full-year 2025",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "thenational-2025-hotel",
+    title: "Dubai Attracted 19.6 Million Tourists in 2025, With City Boasting More Hotel Rooms Than New York",
+    publisher: "The National (citing DET)",
+    url: "https://www.thenationalnews.com/business/2026/02/09/dubai-attracted-196-million-tourists-in-2025-with-city-boasting-more-hotel-rooms-than-new-york/",
+    period: "Full-year 2025",
+    accessedDate: "2026-09-04",
+  },
+
+  // Investment & trade licensing — DET / Dubai Chambers
+  {
+    id: "det-fdi-2024",
+    title: "Dubai FDI Annual Results & Rankings 2024 — Highlights Report",
+    publisher: "Dubai Department of Economy and Tourism (DET) / Dubai FDI Monitor",
+    url: "https://www.dubaidet.gov.ae/en/research-and-insights/-/media/files/invest-in-dubai/fdi/dubai-fdi-annual-results-and-rankings-2024-highlights-report.pdf",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dubaichamber-2024-members",
+    title: "70,000+ New Companies Join Dubai Chamber of Commerce in 2024, Bringing Total Membership to More Than 258,000",
+    publisher: "Dubai Chambers",
+    url: "https://www.dubaichambers.com/en/w/70-000-new-companies-join-dubai-chamber-of-commerce-in-2024-bringing-total-number-of-members-to-more-than-258-000",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "zawya-chamber-nationality-2024",
+    title: "Indian Businesses Lead With 16,623 New Dubai Chamber Registrations in 2024",
+    publisher: "Zawya (citing Dubai Chamber of Commerce)",
+    url: "https://www.zawya.com/en/economy/gcc/indian-businesses-lead-with-16-623-new-dubai-chamber-registrations-in-2024-czclmzcu",
+    period: "Full-year 2024",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "imd-competitiveness-2025",
+    title: "Mohammed Bin Rashid: UAE Is Ranked 5th Globally by 2025 IMD World Competitiveness Ranking",
+    publisher: "Dubai Government Protocol Department",
+    url: "https://www.protocol.dubai.ae/en/media-listing/news-events/mohammed-bin-rashid-uae-is-ranked-5th-globally-by-2025-imd-world-competitiveness-ranking/",
+    period: "2025 ranking",
+    accessedDate: "2026-09-04",
+  },
+  {
+    id: "dmo-gdp-9months-2024",
+    title: "Over AED339 Billion of Dubai Total GDP for 9 Months of 2024",
+    publisher: "Dubai Media Office (Government of Dubai)",
+    url: "https://mediaoffice.ae/en/news/2025/february/06-02/over-aed-339-billion-of-dubai-total-gdp-for-9-months-of-2024",
+    period: "First 9 months of 2024",
+    accessedDate: "2026-09-04",
+  },
+];
 
 export const referenceMap = Object.fromEntries(references.map((r) => [r.id, r]));

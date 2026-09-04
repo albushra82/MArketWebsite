@@ -16,6 +16,7 @@ import {
   LineChart,
   ShieldAlert,
   Users,
+  Briefcase,
   type LucideIcon,
 } from "lucide-react";
 
@@ -37,6 +38,7 @@ export const iconMap: Record<string, LucideIcon> = {
   LineChart,
   ShieldAlert,
   Users,
+  Briefcase,
 };
 
 export function getIcon(name: string): LucideIcon {
